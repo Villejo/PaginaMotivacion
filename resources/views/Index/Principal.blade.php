@@ -20,13 +20,41 @@ Gana dinero desde Casa
 	</div>  
 	<p>
 		{{$Publicacion->Detalle_Publicacion}}
-	</p>                          			
-	<a href="single.html" class="button button-style button-anim fa fa-long-arrow-right"><span>Leer Más</span></a>
-</div>			
-@endforeach
 
-<div class="col-md-12 text-center">
-	<a href="javascript:void(0)" id="load-more-post" class="load-more-button">Load</a>
-	<div id="post-end-message"></div>
+	</p>                        			
+
+	
+	<div class="row">
+		<div class="col-xs-5 col-sm-5">
+			<a href="single.html" class="button button-style button-anim fa fa-long-arrow-right"><span>Leer Más</span></a>
+		</div>
+	</div>
+	<hr>
+	<div class="row">	
+		<div class="col-xs-3 col-sm-3">			
+			0 (Me gusta)
+		</div>
+		<div class="col-xs-3 col-sm-3">			
+			0 (Comentarios)			
+		</div>
+	</div>
+	<div class="row">	
+		<div class="col-xs-3 col-sm-3">
+			<a href="" style="color: #020202" id="">			
+				<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+				Me gusta
+			</a>
+		</div>
+		<div class="col-xs-3 col-sm-3">
+			<!-- <a href="" style="color: #0290ef"> -->
+			<a href="" style="color: #020202">	
+				<i class="fa fa-comment" aria-hidden="true"></i>
+				Comentar
+			</a>
+		</div>
+		<hr>
+	</div>
+
 </div>
+@endforeach
 @stop

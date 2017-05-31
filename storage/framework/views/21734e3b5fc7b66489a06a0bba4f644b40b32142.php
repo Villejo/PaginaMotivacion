@@ -59,7 +59,6 @@ setlocale(LC_ALL,"es_ES@euro","es_ES","esp");
 								<li><a href="#" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
 								<li><a href="#" target="_blank" class="github"><i class="fa fa-github"></i></a></li>
 							</ul>
-
 						</div>
 					</div>
 				</div>
@@ -71,9 +70,12 @@ setlocale(LC_ALL,"es_ES@euro","es_ES","esp");
 								<a href="contact.html"><i class="icon-envelope"></i></a>
 							</div>
 							<div class="col-md-12 content-page">
-								<?php echo $__env->yieldContent('content'); ?>
-								
-							</div>
+								<?php echo $__env->yieldContent('content'); ?>	
+								<div class="col-md-12 text-center">
+									<a href="javascript:void(0)" id="load-more-post" class="load-more-button" title="Cargar Mensajes Anteriores">Cargar</a>
+									<div id="post-end-message"></div>
+								</div>							
+							</div>							
 						</div>
 					</div>
 				</div>
@@ -90,10 +92,10 @@ setlocale(LC_ALL,"es_ES@euro","es_ES","esp");
 						<div class="uipasta-credit">Design By <a href="http://www.uipasta.com" target="_blank">UiPasta</a></div>
 					</footer>
 				</div>					
+				
 			</div>
 		</div>
 	</div>
-
 
 
 
