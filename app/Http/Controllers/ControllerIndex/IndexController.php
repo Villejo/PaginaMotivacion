@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use Motivacion\Http\Controllers\Controller;
 use Motivacion\Models\Usuarios\Usuario;
 use Motivacion\Models\Publicaciones\Publicacion;
-use Motivacion\Models\Equipos\Equipo;
+use Motivacion\Models\Publicaciones\Like;
+use Motivacion\Models\Publicaciones\Comentario;
 use Illuminate\Support\Facades\Input;
 use Response;
 use Illuminate\Support\Facades\Validator;
@@ -28,22 +29,33 @@ class IndexController extends Controller{
 	}
 
 	public function Index(){
-		// $cambiar_password=Auth::user()->cambiar_password;       
-		// if($cambiar_password=='Si'){          
-		// 	return Redirect::to('MyProfile');
-		// }else{
-		// 	if(Auth::user()->fk_rol==1){
-		// 		return view('Administrador.IndexAdministrador');	
-		// 	}else{
-		// 		return view('Empleados.IndexEmpleado');
-		// 	}
-		// }
-
 		$Publicaciones=Publicacion::Where('Estado_Publicacion','Activo')->get();
 
 		return view('Index.Principal')->with('Publicaciones',$Publicaciones);
 
-	}	
+	}
+
+	public function Cargar_Likes_Comentarios(){
+		$TotalMeGustas=Like::Where('Estado_Publicacion','Activo')->count();
+		$TotalComentarios=Comentario::Where('Estado_Publicacion','Activo')->count();
+
+
+		return Response::json(['TotalMeGustas'=>$TotalMeGustas,
+			'TotalComentarios'=>$TotalComentarios]);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	public function encriptar(){
 		return view('Index.temporal');

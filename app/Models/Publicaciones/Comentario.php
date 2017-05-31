@@ -1,12 +1,12 @@
 <?php
 
-namespace Motivacion\Models\Likes;
+namespace Motivacion\Models\Publicaciones;
 
 // use Motivacion\Models\Usuarios\Usuario;
 // use Motivacion\Models\Equipos\Equipo;
 use Illuminate\Database\Eloquent\Model;
 
-class Like extends Model{
+class Comentario extends Model{
 	
 	protected $table = 'likes';
 	public $timestamps = false;

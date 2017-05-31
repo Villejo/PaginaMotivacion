@@ -6,7 +6,7 @@ Gana dinero desde Casa
 @foreach($Publicaciones as $Publicacion)
 <div class="col-md-12 blog-post">
 	<div class="post-image">
-		<!-- <img src="Estilos/images/blog/1.jpg" alt="">                                        -->
+		<!-- <img src="Estilos/images/blog/1.jpg" alt="">-->
 	</div> 
 	<div class="post-title">
 		<a href="single.html">
@@ -20,10 +20,7 @@ Gana dinero desde Casa
 	</div>  
 	<p>
 		{{$Publicacion->Detalle_Publicacion}}
-
-	</p>                        			
-
-	
+	</p>		
 	<div class="row">
 		<div class="col-xs-5 col-sm-5">
 			<a href="single.html" class="button button-style button-anim fa fa-long-arrow-right"><span>Leer Más</span></a>

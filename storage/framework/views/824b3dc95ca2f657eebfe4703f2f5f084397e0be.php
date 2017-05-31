@@ -41,7 +41,7 @@ Gana dinero desde Casa
 	</div>
 	<div class="row">	
 		<div class="col-xs-3 col-sm-3">
-			<a href="" style="color: #020202">			
+			<a href="" style="color: #020202" id="">			
 				<i class="fa fa-thumbs-up" aria-hidden="true"></i>
 				Me gusta
 			</a>

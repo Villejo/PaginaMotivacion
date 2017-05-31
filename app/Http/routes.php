@@ -3,6 +3,22 @@
 // Rutas del Sistema
 // Route::any('Inde', array('as'=>'Index','uses'=>'ControllerUsuarios\UsuariosController@Login'))->middleware('guest');
 Route::any('/', array('as'=>'Index','uses'=>'ControllerIndex\IndexController@Index'))->middleware('guest');
+
+Route::any('LoadDatos', array('as'=>'LoadDatos','uses'=>'ControllerIndex\IndexController@Cargar_Likes_Comentarios'))->middleware('guest');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Route::any('Login', array('as'=>'Login','uses'=>'ControllerUsuarios\UsuariosController@Logueo'))->middleware('guest');
 Route::any('Salir', array('as'=>'Salir','uses'=>'ControllerUsuarios\UsuariosController@Salir'));
 // Actualiza el la fecha Fecha_Ultimo_Ingreso de la persona que se loguea en la aplicacion
