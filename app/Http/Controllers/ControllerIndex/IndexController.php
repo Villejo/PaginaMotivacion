@@ -5,7 +5,7 @@ namespace Motivacion\Http\Controllers\ControllerIndex;
 use Illuminate\Http\Request;
 use Motivacion\Http\Controllers\Controller;
 use Motivacion\Models\Usuarios\Usuario;
-use Motivacion\Models\Notificaciones\Notificacion;
+use Motivacion\Models\Publicaciones\Publicacion;
 use Motivacion\Models\Equipos\Equipo;
 use Illuminate\Support\Facades\Input;
 use Response;
@@ -23,6 +23,8 @@ class IndexController extends Controller{
 
 	public function __construct(){
 		Carbon::setLocale('es');
+		// setlocale(LC_ALL,"es_ES");
+		// Carbon::setlocale(LC_ALL,"es_ES@euro","es_ES","esp");
 	}
 
 	public function Index(){
@@ -37,7 +39,9 @@ class IndexController extends Controller{
 		// 	}
 		// }
 
-		return view('Index.Principal');
+		$Publicaciones=Publicacion::Where('Estado_Publicacion','Activo')->get();
+
+		return view('Index.Principal')->with('Publicaciones',$Publicaciones);
 
 	}	
 

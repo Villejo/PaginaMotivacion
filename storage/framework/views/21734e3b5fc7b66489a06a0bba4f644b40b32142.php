@@ -19,7 +19,7 @@ setlocale(LC_ALL,"es_ES@euro","es_ES","esp");
 	<meta name="robots" content="index,follow">
 
 
-	<title>@yield('title')</title>
+	<title><?php echo $__env->yieldContent('title'); ?></title>
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="Estilos/images/favicon/favicon.ico">
@@ -71,7 +71,7 @@ setlocale(LC_ALL,"es_ES@euro","es_ES","esp");
 								<a href="contact.html"><i class="icon-envelope"></i></a>
 							</div>
 							<div class="col-md-12 content-page">
-								@yield('content')
+								<?php echo $__env->yieldContent('content'); ?>
 								
 							</div>
 						</div>
