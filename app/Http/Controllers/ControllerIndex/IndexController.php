@@ -28,20 +28,54 @@ class IndexController extends Controller{
 		// Carbon::setlocale(LC_ALL,"es_ES@euro","es_ES","esp");
 	}
 
+
+
+	// $asignaturaNotificacion = DB::table('sesiones')
+	// ->where('fecha_sesion',$fecha)
+	// ->where('asignacion_id',$id_asignacion)
+	// ->where('firma_docente',false)
+	// ->where('firma_vocero',false)
+	// ->join('asignaciones', 'sesiones.asignacion_id', '=','asignaciones.id')
+	// ->join('asignaturas', 'asignaturas.id', '=','asignaciones.asignatura_id')
+	// ->join('temas', 'temas.id', '=','sesiones.tema_id')
+	// ->get();
+
+
+
+
+
 	public function Index(){
 		$Publicaciones=Publicacion::Where('Estado_Publicacion','Activo')->get();
 
-		return view('Index.Principal')->with('Publicaciones',$Publicaciones);
+		$TotalMeGustas= DB::table('publicaciones')
+		->where('Estado_Publicacion','Activo')		
+		->join('likes', 'fk_publicacion', '=','publicaciones.id')		
+		->count();
+
+		$TotalComentarios= DB::table('publicaciones')
+		->where('Estado_Publicacion','Activo')		
+		->join('comentarios', 'fk_publicacion', '=','publicaciones.id')		
+		->count();
+
+
+		return view('Index.Principal')->with('Publicaciones',$Publicaciones)
+		->with('TotalMeGustas',$TotalMeGustas)
+		->with('TotalComentarios',$TotalComentarios)
+		;
 
 	}
 
-	public function Cargar_Likes_Comentarios(){
-		$TotalMeGustas=Like::Where('Estado_Publicacion','Activo')->count();
-		$TotalComentarios=Comentario::Where('Estado_Publicacion','Activo')->count();
+	public function Cargar_Megustas(){
+		$Id_Publicacion=Input::get('Megusta');
 
+		$TotalMeGustas= DB::table('publicaciones')
+		->Where('fk_publicacion',$Id_Publicacion)
+		->where('Estado_Publicacion','Activo')		
+		->where('Estado_Publicacion','Activo')	
+		->join('likes', 'fk_publicacion', '=','publicaciones.id')		
+		->count();
 
-		return Response::json(['TotalMeGustas'=>$TotalMeGustas,
-			'TotalComentarios'=>$TotalComentarios]);
+		return Response::json(['TotalMeGustas'=>$TotalMeGustas]);
 	}
 
 

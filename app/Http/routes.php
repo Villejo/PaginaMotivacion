@@ -4,7 +4,7 @@
 // Route::any('Inde', array('as'=>'Index','uses'=>'ControllerUsuarios\UsuariosController@Login'))->middleware('guest');
 Route::any('/', array('as'=>'Index','uses'=>'ControllerIndex\IndexController@Index'))->middleware('guest');
 
-Route::any('LoadDatos', array('as'=>'LoadDatos','uses'=>'ControllerIndex\IndexController@Cargar_Likes_Comentarios'))->middleware('guest');
+Route::any('Cargar_Megustas', array('as'=>'Cargar_Megustas','uses'=>'ControllerIndex\IndexController@Cargar_Megustas'))->middleware('guest');
 
 
 

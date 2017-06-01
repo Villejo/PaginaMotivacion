@@ -27,6 +27,7 @@ setlocale(LC_ALL,"es_ES@euro","es_ES","esp");
 	<link rel="stylesheet" type="text/css" href="Estilos/css/plugin.css">  
 	<link rel="stylesheet" type="text/css" href="Estilos/css/style.css">  
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
+	<script src="jquery/jquery-3.1.0.min.js"></script>	
 </head>
 <body>
 	<div class="preloader">
