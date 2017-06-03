@@ -2,92 +2,59 @@
 Gana dinero desde Casa
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
-<input type="hidden" value="<?php echo e($numero = 1); ?>">
-<input type="hidden" value="<?php echo e($numero2 = 1); ?>">
-<input type="hidden" value="<?php echo e($numero3 = 1); ?>">
-<input type="hidden" value="<?php echo e($numero4 = 1); ?>">
 <?php foreach($Publicaciones as $Publicacion): ?>
+<div class="panel panel-info">
+	<div class="panel-heading">
+		<div class="post-title">
+			<a href="single.html">
+				<h1>
+					<center><?php echo e($Publicacion->Titulo_Publicacion); ?></center>
+				</h1>
+			</a>			
+		</div>		
+	</div>
+	<div class="panel-body">
+		<div class="panel panel-warning">
+			<!-- <div class="panel-heading"></div> -->
+			<div class="panel-body">
+				<div class="col-md-12 blog-post">					
+					<div class="post-info">
+						<span>Publicado : <?php echo e(Carbon::parse($Publicacion->Fecha_Publicacion)->toFormattedDateString()); ?>/ por <strong><?php echo e($Publicacion->Nombre_Usuario_Publicacion->nombre); ?> <?php echo e($Publicacion->Nombre_Usuario_Publicacion->apellido); ?></strong> <a href="#" target="_blank"></a></span>
+					</div>  
+					<p>
+						<?php echo e($Publicacion->Detalle_Publicacion); ?>
 
-<div class="col-md-12 blog-post">
-	<input type="text" value="<?php echo e($Publicacion->id); ?>" id="megusta_<?php echo e($numero++); ?>">
-	<div class="post-image">
-		<!-- <img src="Estilos/images/blog/1.jpg" alt="">-->
-	</div> 
-	<div class="post-title">
-		<a href="single.html">
-			<h1>
-				<?php echo e($Publicacion->Titulo_Publicacion); ?>
-
-			</h1>
-		</a>
-	</div>  
-	<div class="post-info">		
-		<span><?php echo e(Carbon::parse($Publicacion->Fecha_Publicacion)->toFormattedDateString()); ?>/ por <a href="#" target="_blank"><?php echo e(ucwords($Publicacion->Nombre_Usuario_Publicacion->nombre)); ?> <?php echo e(ucwords($Publicacion->Nombre_Usuario_Publicacion->apellido)); ?></a></span>
-	</div>  
-	<p>
-		<?php echo e($Publicacion->Detalle_Publicacion); ?>
-
-	</p>		
-	<div class="row">
-		<div class="col-xs-5 col-sm-5">
-			<a href="single.html" class="button button-style button-anim fa fa-long-arrow-right"><span>Leer Más</span></a>
+						<br>
+						<a href="single.html" class="button button-style button-anim fa fa-long-arrow-right">Leer Más</a>
+					</p>
+					<div class="post-image">
+						<!-- <img src="Estilos/images/blog/1.jpg" alt=""> -->
+					</div>
+				</div>
+				<div class="row">	
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-md-offset-1">	
+						<div class="fb-comments" data-href="http://comentario1.net/" data-numposts="10"></div>
+					</div>					
+				</div>
+			</div>
 		</div>
 	</div>
-	<hr>
-	<div class="row">	
-		<div class="col-xs-3 col-sm-3">			
-			<script type="text/javascript">
-				Consultar_Megustas();
-				function Consultar_Megustas(){
-					var Megusta=$('#megusta_<?php echo e($numero2++); ?>').val();
-					console.log(Megusta)
-					var _token=$('#_token').val();
-					console.log(_token)
-					$.ajax({
-						url   : "<?= URL::to('Cargar_Megustas') ?>",
-						type  : "POST",
-						async : false,
-						data:{
-							'Megusta' 	 : Megusta,
-							'_token'       	  : _token						
-						},		
-						success:function(respuesta){	
-							console.log(respuesta.TotalMeGustas);						
-							$('#megusta_<?php echo e($numero3++); ?>').text(respuesta.TotalMeGustas);
-						}						
-						
-
-					});
-
-
-				}
-			</script>
-			<label id="TotalMegusta_<?php echo e($numero4++); ?>"></label>
-			
-		</div>
-		<div class="col-xs-3 col-sm-3">			
-			0 (Comentarios)			
-		</div>
-	</div>
-	<div class="row">	
-		<div class="col-xs-3 col-sm-3">
-			<a href="" style="color: #020202" id="">			
-				<i class="fa fa-thumbs-up" aria-hidden="true"></i>
-				Me gusta
-			</a>
-		</div>
-		<div class="col-xs-3 col-sm-3">
-			<!-- <a href="" style="color: #0290ef"> -->
-			<a href="" style="color: #020202">	
-				<i class="fa fa-comment" aria-hidden="true"></i>
-				Comentar
-			</a>
-		</div>
-		<hr>
-	</div>
-
 </div>
+<br>
+
 <?php endforeach; ?>
+
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.9";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
 

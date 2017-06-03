@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('America/Bogota');
 use Carbon\Carbon;
-setlocale(LC_ALL,"es_ES@euro","es_ES","esp");
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -28,7 +28,7 @@ setlocale(LC_ALL,"es_ES@euro","es_ES","esp");
 	<link rel="stylesheet" type="text/css" href="Estilos/css/style.css">  
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
 	<script src="jquery/jquery-3.1.0.min.js"></script>	
-	<input type="text" name="_token" id="_token"  value="<?php echo e(csrf_token()); ?>">
+	<input type="hidden" name="_token" id="_token"  value="<?php echo e(csrf_token()); ?>">
 </head>
 <body>
 	<div class="preloader">
@@ -70,6 +70,7 @@ setlocale(LC_ALL,"es_ES@euro","es_ES","esp");
 							<div class="sub-title">
 								<h2>Bienvenido a mi BLOG</h2>
 								<a href="contact.html"><i class="icon-envelope"></i></a>
+								<p>Aquí encontraran todo acerca de como ganar desde casa con la empresa <strong> Clickeame </strong>, donde compartiré con todos mis referidos, estaré actualizando el sitio constantemente.</p>
 							</div>
 							<div class="col-md-12 content-page">
 								<?php echo $__env->yieldContent('content'); ?>	
@@ -80,42 +81,41 @@ setlocale(LC_ALL,"es_ES@euro","es_ES","esp");
 							</div>							
 						</div>
 					</div>
-				</div>
-				<!-- Footer Start -->
-				<div class="col-md-12 page-body margin-top-50 footer">
-					<footer>
-						<ul class="menu-link">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="work.html">Work</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-						<p>© Copyright 2016 DevBlog. All rights reserved</p>
-						<div class="uipasta-credit">Design By <a href="http://www.uipasta.com" target="_blank">UiPasta</a></div>
-					</footer>
-				</div>					
-				
+
+					<!-- Footer Start -->
+					<div class="col-md-12 page-body margin-top-50 footer">
+						<footer>
+							<ul class="menu-link">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="work.html">Work</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+							<p>© Copyright 2016 DevBlog. All rights reserved</p>
+							<div class="uipasta-credit">Design By <a href="http://www.uipasta.com" target="_blank">UiPasta</a></div>
+						</footer>
+					</div>					
+				</div>				
 			</div>
 		</div>
-	</div>
 
 
 
-	<!-- Back to Top Start -->
-	<a href="#" class="scroll-to-top"><i class="fa fa-long-arrow-up"></i></a>
-	<!-- Back to Top End -->
+		<!-- Back to Top Start -->
+		<a href="#" class="scroll-to-top"><i class="fa fa-long-arrow-up"></i></a>
+		<!-- Back to Top End -->
 
 
-	<!-- All Javascript Plugins  -->
-	<script type="text/javascript" src="Estilos/js/jquery.min.js"></script>
-	<script type="text/javascript" src="Estilos/js/plugin.js"></script>
+		<!-- All Javascript Plugins  -->
+		<script type="text/javascript" src="Estilos/js/jquery.min.js"></script>
+		<script type="text/javascript" src="Estilos/js/plugin.js"></script>
 
-	<!-- Main Javascript File  -->
-	<script type="text/javascript" src="Estilos/js/scripts.js"></script>
+		<!-- Main Javascript File  -->
+		<script type="text/javascript" src="Estilos/js/scripts.js"></script>
 
 
-</body>
-</html>
+	</body>
+	</html>
 
 
 

@@ -45,46 +45,14 @@ class IndexController extends Controller{
 
 
 	public function Index(){
-		$Publicaciones=DB::table('publicaciones')
-		->where('Estado_Publicacion','Activo')	
-		->join('likes', 'publicaciones.id', '=','likes.fk_publicacion')	
-		->join('comentarios', 'publicaciones.id', '=','comentarios.fk_publicacion')	
-		->get();
-
-		dd($Publicaciones);
-
-		$TotalMeGustas= DB::table('publicaciones')
-		->where('Estado_Publicacion','Activo')		
-		->join('likes', 'fk_publicacion', '=','publicaciones.id')		
-		->count();
-
-		$TotalComentarios= DB::table('publicaciones')
-		->where('Estado_Publicacion','Activo')		
-		->join('comentarios', 'fk_publicacion', '=','publicaciones.id')		
-		->count();
+		$Publicaciones=Publicacion::where('Estado_Publicacion','Activo')		
+		->get();			
 
 
-		return view('Index.Principal')->with('Publicaciones',$Publicaciones)
-		->with('TotalMeGustas',$TotalMeGustas)
-		->with('TotalComentarios',$TotalComentarios)
-		;
+		return view('Index.Principal')->with('Publicaciones',$Publicaciones);
 
 	}
-
-	public function Cargar_Megustas(){
-		$Id_Publicacion=Input::get('Megusta');
-
-		dd($Id_Publicacion);
-
-		$TotalMeGustas= DB::table('publicaciones')
-		->Where('fk_publicacion',$Id_Publicacion)
-		->where('Estado_Publicacion','Activo')		
-		->where('Estado_Publicacion','Activo')	
-		->join('likes', 'fk_publicacion', '=','publicaciones.id')		
-		->count();
-
-		return Response::json(['TotalMeGustas'=>$TotalMeGustas]);
-	}
+	
 
 
 

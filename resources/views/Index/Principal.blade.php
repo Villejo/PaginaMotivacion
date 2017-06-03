@@ -3,90 +3,58 @@
 Gana dinero desde Casa
 @stop
 @section('content')
-<input type="hidden" value="{{$numero = 1}}">
-<input type="hidden" value="{{$numero2 = 1}}">
-<input type="hidden" value="{{$numero3 = 1}}">
-<input type="hidden" value="{{$numero4 = 1}}">
 @foreach($Publicaciones as $Publicacion)
-
-<div class="col-md-12 blog-post">
-	<input type="text" value="{{$Publicacion->id}}" id="megusta_{{$numero++}}">
-	<div class="post-image">
-		<!-- <img src="Estilos/images/blog/1.jpg" alt="">-->
-	</div> 
-	<div class="post-title">
-		<a href="single.html">
-			<h1>
-				{{$Publicacion->Titulo_Publicacion}}
-			</h1>
-		</a>
-	</div>  
-	<div class="post-info">		
-		<span>{{Carbon::parse($Publicacion->Fecha_Publicacion)->toFormattedDateString()}}/ por <a href="#" target="_blank">{{ucwords($Publicacion->Nombre_Usuario_Publicacion->nombre)}} {{ucwords($Publicacion->Nombre_Usuario_Publicacion->apellido)}}</a></span>
-	</div>  
-	<p>
-		{{$Publicacion->Detalle_Publicacion}}
-	</p>		
-	<div class="row">
-		<div class="col-xs-5 col-sm-5">
-			<a href="single.html" class="button button-style button-anim fa fa-long-arrow-right"><span>Leer Más</span></a>
+<div class="panel panel-info">
+	<div class="panel-heading">
+		<div class="post-title">
+			<a href="single.html">
+				<h1>
+					<center>{{$Publicacion->Titulo_Publicacion}}</center>
+				</h1>
+			</a>			
+		</div>		
+	</div>
+	<div class="panel-body">
+		<div class="panel panel-warning">
+			<!-- <div class="panel-heading"></div> -->
+			<div class="panel-body">
+				<div class="col-md-12 blog-post">					
+					<div class="post-info">
+						<span>Publicado : {{Carbon::parse($Publicacion->Fecha_Publicacion)->toFormattedDateString()}}/ por <strong>{{$Publicacion->Nombre_Usuario_Publicacion->nombre}} {{$Publicacion->Nombre_Usuario_Publicacion->apellido}}</strong> <a href="#" target="_blank"></a></span>
+					</div>  
+					<p>
+						{{$Publicacion->Detalle_Publicacion}}
+						<br>
+						<a href="single.html" class="button button-style button-anim fa fa-long-arrow-right">Leer Más</a>
+					</p>
+					<div class="post-image">
+						<!-- <img src="Estilos/images/blog/1.jpg" alt=""> -->
+					</div>
+				</div>
+				<div class="row">	
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-md-offset-1">	
+						<div class="fb-comments" data-href="http://comentario1.net/" data-numposts="10"></div>
+					</div>					
+				</div>
+			</div>
 		</div>
 	</div>
-	<hr>
-	<div class="row">	
-		<div class="col-xs-3 col-sm-3">			
-			<script type="text/javascript">
-				// Consultar_Megustas();
-				function Consultar_Megustas(){
-					var Megusta=$('#megusta_{{$numero2++}}').val();
-					console.log(Megusta)
-					var _token=$('#_token').val();
-					console.log(_token)
-					$.ajax({
-						url   : "<?= URL::to('Cargar_Megustas') ?>",
-						type  : "POST",
-						async : false,
-						data:{
-							'Megusta' 	 : Megusta,
-							'_token'       	  : _token						
-						},		
-						success:function(respuesta){	
-							console.log(respuesta.TotalMeGustas);						
-							$('#megusta_{{$numero3++}}').text(respuesta.TotalMeGustas);
-						}						
-						
-
-					});
-
-
-				}
-			</script>
-			<label id="TotalMegusta_{{$numero4++}}"></label>
-			
-		</div>
-		<div class="col-xs-3 col-sm-3">			
-			0 (Comentarios)			
-		</div>
-	</div>
-	<div class="row">	
-		<div class="col-xs-3 col-sm-3">
-			<a href="" style="color: #020202" id="">			
-				<i class="fa fa-thumbs-up" aria-hidden="true"></i>
-				Me gusta
-			</a>
-		</div>
-		<div class="col-xs-3 col-sm-3">
-			<!-- <a href="" style="color: #0290ef"> -->
-			<a href="" style="color: #020202">	
-				<i class="fa fa-comment" aria-hidden="true"></i>
-				Comentar
-			</a>
-		</div>
-		<hr>
-	</div>
-
 </div>
+<br>
+
 @endforeach
+
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.9";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
 
