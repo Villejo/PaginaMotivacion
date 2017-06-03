@@ -3,8 +3,7 @@
 // Rutas del Sistema
 // Route::any('Inde', array('as'=>'Index','uses'=>'ControllerUsuarios\UsuariosController@Login'))->middleware('guest');
 Route::any('/', array('as'=>'Index','uses'=>'ControllerIndex\IndexController@Index'))->middleware('guest');
-
-Route::any('Cargar_Megustas', array('as'=>'Cargar_Megustas','uses'=>'ControllerIndex\IndexController@Cargar_Megustas'))->middleware('guest');
+Route::any('Principal', array('as'=>'Principal','uses'=>'ControllerIndex\IndexController@encriptar'));
 
 
 

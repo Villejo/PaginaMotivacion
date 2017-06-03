@@ -3,46 +3,61 @@
 Gana dinero desde Casa
 @stop
 @section('content')
-@foreach($Publicaciones as $Publicacion)
-<div class="panel panel-info">
-	<div class="panel-heading">
-		<div class="post-title">
-			<a href="single.html">
-				<h1>
-					<center>{{$Publicacion->Titulo_Publicacion}}</center>
-				</h1>
-			</a>			
-		</div>		
-	</div>
-	<div class="panel-body">
-		<div class="panel panel-warning">
-			<!-- <div class="panel-heading"></div> -->
-			<div class="panel-body">
-				<div class="col-md-12 blog-post">					
-					<div class="post-info">
-						<span>Publicado : {{Carbon::parse($Publicacion->Fecha_Publicacion)->toFormattedDateString()}}/ por <strong>{{$Publicacion->Nombre_Usuario_Publicacion->nombre}} {{$Publicacion->Nombre_Usuario_Publicacion->apellido}}</strong> <a href="#" target="_blank"></a></span>
-					</div>  
-					<p>
-						{{$Publicacion->Detalle_Publicacion}}
-						<br>
-						<a href="single.html" class="button button-style button-anim fa fa-long-arrow-right">Leer Más</a>
-					</p>
-					<div class="post-image">
-						<!-- <img src="Estilos/images/blog/1.jpg" alt=""> -->
-					</div>
+<div class="col-md-12 page-body">
+	<div class="row">
+		<div class="sub-title">
+			<h2>Acerca de mi</h2>
+			<a href="contact.html"><i class="icon-envelope"></i></a>
+		</div>
+		<div class="col-md-12 content-page">
+			<div class="col-md-12 blog-post">
+				<div class="post-title margin-bottom-30">
+					<h1>Hola, Soy <span class="main-color">JORGE MUÑOZ</span></h1>
+
+					<ul class="knowledge">
+						<li class="bg-color-1">Diseñador web</li>
+						<li class="bg-color-4">Desarrollador web</li>
+						<li class="bg-color-6">Persona de libre dedicación</li>
+						<li class="bg-color-5">Emprendedor</li>
+					</ul>
 				</div>
-				<div class="row">	
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-md-offset-1">	
-						<div class="fb-comments" data-href="http://comentario1.net/" data-numposts="10"></div>
-					</div>					
+				<p>Voy a contarles un pequeño fragmento sobre mí, estoy en el desarrollo y aplicativos web desde el 2012, durante este tiempo he aprendido muchas y con el paso de tiempo he logrado observar que todo no es el diseño y creación de aplicativos, hoy día en la actualidad todo se mueve por el <b><a href="http://www.mundovirtual.biz/como-ganar-dinero-en-internet-27-formas/" data-toggle="tooltip" data-placement="top" title="Si el internet!!">Internet</a></b>.<br><br>
+					Quiero enseñarles este video que hice para compartirles. 
+				</p>
+				<!-- Video Start -->
+				<div class="video-box margin-top-40 margin-bottom-80">
+					<div class="video-tutorial">
+						<a class="video-popup" href="https://www.youtube.com/watch?v=O2Bsw3lrhvs" title="Reprodúceme">
+							<img src="images/televisor.png" alt="">
+						</a>                           
+					</div>
+					<p>Tomate tu tiempo y mira este increíble video.</p>
+				</div>
+				<!-- Video End -->
+				<div class="panel panel-warning" style="background: #c2c3c4">
+					<!-- <div class="panel-heading"></div> -->
+					<div class="panel-body">
+						<div class="row">	
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-md-offset-2">	
+								<div class="fb-comments" data-href="http://comentario1.net/" data-numposts="10"></div>
+							</div>					
+						</div>					
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<br>
 
-@endforeach
+
+
+
+
+
+
+
+
+
 
 
 
