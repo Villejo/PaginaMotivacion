@@ -28,6 +28,7 @@ setlocale(LC_ALL,"es_ES@euro","es_ES","esp");
 	<link rel="stylesheet" type="text/css" href="Estilos/css/style.css">  
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
 	<script src="jquery/jquery-3.1.0.min.js"></script>	
+	<input type="text" name="_token" id="_token"  value="<?php echo e(csrf_token()); ?>">
 </head>
 <body>
 	<div class="preloader">

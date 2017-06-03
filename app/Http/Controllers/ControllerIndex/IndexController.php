@@ -45,7 +45,13 @@ class IndexController extends Controller{
 
 
 	public function Index(){
-		$Publicaciones=Publicacion::Where('Estado_Publicacion','Activo')->get();
+		$Publicaciones=DB::table('publicaciones')
+		->where('Estado_Publicacion','Activo')	
+		->join('likes', 'publicaciones.id', '=','likes.fk_publicacion')	
+		->join('comentarios', 'publicaciones.id', '=','comentarios.fk_publicacion')	
+		->get();
+
+		dd($Publicaciones);
 
 		$TotalMeGustas= DB::table('publicaciones')
 		->where('Estado_Publicacion','Activo')		
@@ -67,6 +73,8 @@ class IndexController extends Controller{
 
 	public function Cargar_Megustas(){
 		$Id_Publicacion=Input::get('Megusta');
+
+		dd($Id_Publicacion);
 
 		$TotalMeGustas= DB::table('publicaciones')
 		->Where('fk_publicacion',$Id_Publicacion)

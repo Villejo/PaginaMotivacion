@@ -36,21 +36,23 @@ Gana dinero desde Casa
 	<div class="row">	
 		<div class="col-xs-3 col-sm-3">			
 			<script type="text/javascript">
-				Consultar_Megustas();
+				// Consultar_Megustas();
 				function Consultar_Megustas(){
 					var Megusta=$('#megusta_{{$numero2++}}').val();
 					console.log(Megusta)
-
+					var _token=$('#_token').val();
+					console.log(_token)
 					$.ajax({
 						url   : "<?= URL::to('Cargar_Megustas') ?>",
-						type  : "GET",
+						type  : "POST",
 						async : false,
 						data:{
-							'Megusta' 	 : Megusta							
+							'Megusta' 	 : Megusta,
+							'_token'       	  : _token						
 						},		
 						success:function(respuesta){	
-						console.log(respuesta.TotalMeGustas);						
-							$('#TotalMegusta_{{$numero3++}}').text(respuesta.TotalMeGustas);
+							console.log(respuesta.TotalMeGustas);						
+							$('#megusta_{{$numero3++}}').text(respuesta.TotalMeGustas);
 						}						
 						
 
