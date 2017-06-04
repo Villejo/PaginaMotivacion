@@ -43,8 +43,21 @@ use Carbon\Carbon;
 							<img src="Estilos/images/blog/author.png" alt="">
 							<a href="javascript:void(0)" class="collapsed" data-target="#menu" data-toggle="collapse"><i class="icon-menu menu"></i></a>
 							<div id="menu" class="collapse">
-								<ul class="menu-link">									
-									<li><a href="index.html">Introducción</a></li>
+								<ul class="menu-link">	
+									<?php
+									$vista = Route::currentRouteName();
+									$current = array
+									(
+										'Principal' => ''
+										);
+									if ($vista == '' || $vista == 'Principal'){
+										$current['Principal'] = 'active';
+									}								
+									?>
+									
+									<li class="<?php echo e($current['Principal']); ?>">
+										<a href="<?php echo e(URL::route('Principal')); ?>">Introducción</a>
+									</li>
 									<li><a href="about.html">Camino</a></li>
 									<li><a href="work.html">Seguridad</a></li>
 									<li><a href="contact.html">Herramientas</a></li>
@@ -72,19 +85,9 @@ use Carbon\Carbon;
 
 							<ul class="menu-link">
 
-								<?php
-								$vista = Route::currentRouteName();
-								$current = array
-								(
-									'Principal' => ''
-									);
-								if ($vista == '' || $vista == 'Principal'){
-									$current['Principal'] = 'active';
-								}								
-								?>
 								
 								<li class="<?php echo e($current['Principal']); ?>">
-									<a href="<?php echo e(URL::route('Login')); ?>">Introducción</a>
+									<a href="<?php echo e(URL::route('Principal')); ?>">Introducción</a>
 								</li>
 								<li><a href="about.html">Camino</a></li>
 								<li><a href="work.html">Seguridad</a></li>

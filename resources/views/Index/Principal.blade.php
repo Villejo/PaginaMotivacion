@@ -34,14 +34,14 @@ Gana dinero desde Casa
 					<p>Tomate tu tiempo y mira este increíble video.</p>
 				</div>
 				<!-- Video End -->
-				<div class="panel panel-warning" style="background: #c2c3c4">
-					<!-- <div class="panel-heading"></div> -->
-					<div class="panel-body">
-						<div class="row">	
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-md-offset-2">	
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display:inline-block;text-align:center;justify-content: center;aling-items: center">
+					<div class="panel panel-warning" style="background: #c2c3c4">
+						<!-- <div class="panel-heading"></div> -->
+						<div class="panel-body">
+							<div class="row">
 								<div class="fb-comments" data-href="http://comentario1.net/" data-numposts="10"></div>
 							</div>					
-						</div>					
+						</div>
 					</div>
 				</div>
 			</div>
