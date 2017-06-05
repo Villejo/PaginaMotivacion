@@ -40,7 +40,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">La pagina a la que trata accdeder no existe.</div>
+                <div class="title">Be right back.</div>
             </div>
         </div>
     </body>

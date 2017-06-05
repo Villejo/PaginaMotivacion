@@ -1,6 +1,6 @@
 <?php
 
-namespace Motivacion\Http\Requests;
+namespace WebMotivacion\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Motivacion\Console\Commands;
+namespace WebMotivacion\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

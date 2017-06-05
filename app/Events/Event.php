@@ -1,6 +1,6 @@
 <?php
 
-namespace Motivacion\Events;
+namespace WebMotivacion\Events;
 
 abstract class Event
 {

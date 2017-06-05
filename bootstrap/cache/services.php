@@ -22,14 +22,10 @@
     18 => 'Illuminate\\Translation\\TranslationServiceProvider',
     19 => 'Illuminate\\Validation\\ValidationServiceProvider',
     20 => 'Illuminate\\View\\ViewServiceProvider',
-    21 => 'Motivacion\\Providers\\AppServiceProvider',
-    22 => 'Motivacion\\Providers\\AuthServiceProvider',
-    23 => 'Motivacion\\Providers\\EventServiceProvider',
-    24 => 'Motivacion\\Providers\\RouteServiceProvider',
-    25 => 'Styde\\Html\\HtmlServiceProvider',
-    26 => 'Collective\\Html\\HtmlServiceProvider',
-    27 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
-    28 => 'Barryvdh\\DomPDF\\ServiceProvider',
+    21 => 'WebMotivacion\\Providers\\AppServiceProvider',
+    22 => 'WebMotivacion\\Providers\\AuthServiceProvider',
+    23 => 'WebMotivacion\\Providers\\EventServiceProvider',
+    24 => 'WebMotivacion\\Providers\\RouteServiceProvider',
   ),
   'eager' => 
   array (
@@ -42,13 +38,10 @@
     6 => 'Illuminate\\Pagination\\PaginationServiceProvider',
     7 => 'Illuminate\\Session\\SessionServiceProvider',
     8 => 'Illuminate\\View\\ViewServiceProvider',
-    9 => 'Motivacion\\Providers\\AppServiceProvider',
-    10 => 'Motivacion\\Providers\\AuthServiceProvider',
-    11 => 'Motivacion\\Providers\\EventServiceProvider',
-    12 => 'Motivacion\\Providers\\RouteServiceProvider',
-    13 => 'Styde\\Html\\HtmlServiceProvider',
-    14 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
-    15 => 'Barryvdh\\DomPDF\\ServiceProvider',
+    9 => 'WebMotivacion\\Providers\\AppServiceProvider',
+    10 => 'WebMotivacion\\Providers\\AuthServiceProvider',
+    11 => 'WebMotivacion\\Providers\\EventServiceProvider',
+    12 => 'WebMotivacion\\Providers\\RouteServiceProvider',
   ),
   'deferred' => 
   array (
@@ -135,10 +128,6 @@
     'translation.loader' => 'Illuminate\\Translation\\TranslationServiceProvider',
     'validator' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
-    'html' => 'Collective\\Html\\HtmlServiceProvider',
-    'form' => 'Collective\\Html\\HtmlServiceProvider',
-    'Collective\\Html\\HtmlBuilder' => 'Collective\\Html\\HtmlServiceProvider',
-    'Collective\\Html\\FormBuilder' => 'Collective\\Html\\HtmlServiceProvider',
   ),
   'when' => 
   array (
@@ -176,9 +165,6 @@
     array (
     ),
     'Illuminate\\Validation\\ValidationServiceProvider' => 
-    array (
-    ),
-    'Collective\\Html\\HtmlServiceProvider' => 
     array (
     ),
   ),

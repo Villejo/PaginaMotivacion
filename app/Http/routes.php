@@ -1,7 +1,21 @@
 <?php
 
-// Rutas del Sistema
-// Route::any('Inde', array('as'=>'Index','uses'=>'ControllerUsuarios\UsuariosController@Login'))->middleware('guest');
+/*
+|--------------------------------------------------------------------------
+| Application Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register all of the routes for an application.
+| It's a breeze. Simply tell Laravel the URIs it should respond to
+| and give it the controller to call when that URI is requested.
+|
+*/
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
 Route::any('/', array('as'=>'Index','uses'=>'ControllerIndex\IndexController@Index'))->middleware('guest');
 
 Route::any('Principal', array('as'=>'Principal','uses'=>'ControllerIndex\IndexController@Principal'));

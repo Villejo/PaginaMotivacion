@@ -1,6 +1,6 @@
 <?php
 
-namespace Motivacion\Jobs;
+namespace WebMotivacion\Jobs;
 
 use Illuminate\Bus\Queueable;
 

@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => Motivacion\User::class,
+        'model' => WebMotivacion\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

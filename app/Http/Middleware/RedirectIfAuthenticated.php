@@ -1,6 +1,6 @@
 <?php
 
-namespace Motivacion\Http\Middleware;
+namespace WebMotivacion\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;
@@ -15,12 +15,11 @@ class RedirectIfAuthenticated
      * @param  string|null  $guard
      * @return mixed
      */
-    public function handle($request, Closure $next, $guard = null)    {
-       
-        
+    public function handle($request, Closure $next, $guard = null)
+    {
         if (Auth::guard($guard)->check()) {
-            return redirect()->route('Index');
-        }       
+            return redirect('/');
+        }
 
         return $next($request);
     }

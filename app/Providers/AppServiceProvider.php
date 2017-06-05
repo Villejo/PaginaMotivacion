@@ -1,6 +1,6 @@
 <?php
 
-namespace Motivacion\Providers;
+namespace WebMotivacion\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

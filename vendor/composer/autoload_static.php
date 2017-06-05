@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit3875a160cf1ab11c01a49a5371473fb0
+class ComposerStaticInit503e0662671edfdac4725140fa91e6f1
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -32,6 +32,7 @@ class ComposerStaticInit3875a160cf1ab11c01a49a5371473fb0
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
+            'WebMotivacion\\' => 14,
         ),
         'T' => 
         array (
@@ -66,7 +67,6 @@ class ComposerStaticInit3875a160cf1ab11c01a49a5371473fb0
         ),
         'M' => 
         array (
-            'Motivacion\\' => 11,
             'Monolog\\' => 8,
         ),
         'L' => 
@@ -89,6 +89,7 @@ class ComposerStaticInit3875a160cf1ab11c01a49a5371473fb0
         ),
         'C' => 
         array (
+            'Cron\\' => 5,
             'Collective\\Html\\' => 16,
             'ClassPreloader\\' => 15,
             'Carbon\\' => 7,
@@ -103,8 +104,8 @@ class ComposerStaticInit3875a160cf1ab11c01a49a5371473fb0
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
         'XdgBaseDir\\' => 
         array (
@@ -113,6 +114,10 @@ class ComposerStaticInit3875a160cf1ab11c01a49a5371473fb0
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'WebMotivacion\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
@@ -202,10 +207,6 @@ class ComposerStaticInit3875a160cf1ab11c01a49a5371473fb0
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
-        'Motivacion\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app',
-        ),
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
@@ -233,6 +234,10 @@ class ComposerStaticInit3875a160cf1ab11c01a49a5371473fb0
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
+        ),
+        'Cron\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron',
         ),
         'Collective\\Html\\' => 
         array (
@@ -307,17 +312,12 @@ class ComposerStaticInit3875a160cf1ab11c01a49a5371473fb0
                 0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
             ),
         ),
-        'C' => 
-        array (
-            'Cron' => 
-            array (
-                0 => __DIR__ . '/..' . '/mtdowling/cron-expression/src',
-            ),
-        ),
     );
 
     public static $classMap = array (
         'Cpdf' => __DIR__ . '/..' . '/dompdf/dompdf/lib/Cpdf.php',
+        'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+        'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
@@ -424,6 +424,10 @@ class ComposerStaticInit3875a160cf1ab11c01a49a5371473fb0
         'Maatwebsite\\Excel\\Readers\\LaravelExcelReader' => __DIR__ . '/..' . '/maatwebsite/excel/src/Maatwebsite/Excel/Readers/LaravelExcelReader.php',
         'Maatwebsite\\Excel\\Writers\\CellWriter' => __DIR__ . '/..' . '/maatwebsite/excel/src/Maatwebsite/Excel/Writers/CellWriter.php',
         'Maatwebsite\\Excel\\Writers\\LaravelExcelWriter' => __DIR__ . '/..' . '/maatwebsite/excel/src/Maatwebsite/Excel/Writers/LaravelExcelWriter.php',
+        'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/Assert.php',
+        'PHPUnit\\Framework\\BaseTestListener' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/BaseTestListener.php',
+        'PHPUnit\\Framework\\TestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/TestCase.php',
+        'PHPUnit\\Framework\\TestListener' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/TestListener.php',
         'PHPUnit_Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit_Extensions_GroupTestSuite' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
         'PHPUnit_Extensions_PhptTestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/PhptTestCase.php',
@@ -751,6 +755,7 @@ class ComposerStaticInit3875a160cf1ab11c01a49a5371473fb0
         'PHP_Token_NEW' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_NS_C' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_NS_SEPARATOR' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
+        'PHP_Token_NULLSAFE_OBJECT_OPERATOR' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_NUM_STRING' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_OBJECT_CAST' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_OBJECT_OPERATOR' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
@@ -864,10 +869,10 @@ class ComposerStaticInit3875a160cf1ab11c01a49a5371473fb0
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit3875a160cf1ab11c01a49a5371473fb0::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit3875a160cf1ab11c01a49a5371473fb0::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit3875a160cf1ab11c01a49a5371473fb0::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit3875a160cf1ab11c01a49a5371473fb0::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit503e0662671edfdac4725140fa91e6f1::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit503e0662671edfdac4725140fa91e6f1::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit503e0662671edfdac4725140fa91e6f1::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit503e0662671edfdac4725140fa91e6f1::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -1,13 +1,13 @@
 <?php
 
-namespace Motivacion\Http\Controllers\ControllerIndex;
+namespace WebMotivacion\Http\Controllers\ControllerIndex;
 
 use Illuminate\Http\Request;
-use Motivacion\Http\Controllers\Controller;
-use Motivacion\Models\Usuarios\Usuario;
-use Motivacion\Models\Publicaciones\Publicacion;
-use Motivacion\Models\Publicaciones\Like;
-use Motivacion\Models\Publicaciones\Comentario;
+use WebMotivacion\Http\Controllers\Controller;
+use WebMotivacion\Models\Usuarios\Usuario;
+use WebMotivacion\Models\Publicaciones\Publicacion;
+use WebMotivacion\Models\Publicaciones\Like;
+use WebMotivacion\Models\Publicaciones\Comentario;
 use Illuminate\Support\Facades\Input;
 use Response;
 use Illuminate\Support\Facades\Validator;

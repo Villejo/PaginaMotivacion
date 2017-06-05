@@ -1,8 +1,8 @@
 <?php
 
-namespace Motivacion\Http\Controllers\Auth;
+namespace WebMotivacion\Http\Controllers\Auth;
 
-use Motivacion\Http\Controllers\Controller;
+use WebMotivacion\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class PasswordController extends Controller

@@ -67,13 +67,13 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Proyecto_Candes_2017\Usuarios\Usuario::class,
+            'model' => WebMotivacion\User::class,
         ],
 
-        'users' => [
-            'driver' => 'database',
-            'table' => 'usuarios',
-        ],
+        // 'users' => [
+        //     'driver' => 'database',
+        //     'table' => 'users',
+        // ],
     ],
 
     /*

@@ -1,6 +1,6 @@
 <?php
 
-namespace Motivacion\Providers;
+namespace WebMotivacion\Providers;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'Motivacion\Events\SomeEvent' => [
-            'Motivacion\Listeners\EventListener',
+        'WebMotivacion\Events\SomeEvent' => [
+            'WebMotivacion\Listeners\EventListener',
         ],
     ];
 

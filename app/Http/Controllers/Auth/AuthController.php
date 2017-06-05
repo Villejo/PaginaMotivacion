@@ -1,13 +1,12 @@
 <?php
 
-namespace Motivacion\Http\Controllers\Auth;
+namespace WebMotivacion\Http\Controllers\Auth;
 
-use Motivacion\User;
+use WebMotivacion\User;
 use Validator;
-use Motivacion\Http\Controllers\Controller;
+use WebMotivacion\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
-use Motivacion\Models\Roles\Roles;
 
 class AuthController extends Controller
 {
@@ -53,7 +52,7 @@ class AuthController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
-            ]);
+        ]);
     }
 
     /**
@@ -68,10 +67,6 @@ class AuthController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-            ]);
-    }
-
-    public function Nombre_Rol()    {       
-        return $this->belongsto(Roles::class,'fk_rol');
+        ]);
     }
 }

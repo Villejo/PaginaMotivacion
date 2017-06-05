@@ -1,6 +1,6 @@
 <?php
 
-namespace Motivacion\Exceptions;
+namespace WebMotivacion\Exceptions;
 
 use Exception;
 use Illuminate\Validation\ValidationException;
