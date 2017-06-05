@@ -18,7 +18,7 @@
 
 Route::any('/', array('as'=>'Index','uses'=>'ControllerIndex\IndexController@Index'))->middleware('guest');
 
-Route::any('Principal', array('as'=>'Principal','uses'=>'ControllerIndex\IndexController@Principal'));
+Route::any('Principal', array('as'=>'Principal','uses'=>'ControllerIndex\IndexController@Index'));
 
 
 
