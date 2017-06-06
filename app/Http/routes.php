@@ -25,15 +25,6 @@ Route::any('Principal', array('as'=>'Principal','uses'=>'ControllerIndex\IndexCo
 
 
 
-//--------------------------------fin control consolidados---------------------------------
-
-
-
-
-
-
-
-// Termina Formulario 1
 
 
 
