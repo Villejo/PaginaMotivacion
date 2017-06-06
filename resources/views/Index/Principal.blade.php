@@ -32,11 +32,11 @@ Gana dinero desde Casa
 						</a>                           
 					</div>
 					<p>Tomate tu tiempo y mira este increíble video.</p>
-					<br><br><br>
-					<center><button class="btn btn-success"> => SIGUIENTE PASO</button></center>
+					
 				</div>
 				<!-- Video End -->
-
+				<br>
+				<center><button class="btn btn-success"> >> SIGUIENTE PASO</button></center>				<br><br><br>
 
 
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display:inline-block;text-align:center;justify-content: center;aling-items: center">
