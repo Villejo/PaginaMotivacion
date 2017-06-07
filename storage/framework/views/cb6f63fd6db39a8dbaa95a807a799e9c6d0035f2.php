@@ -1,30 +1,26 @@
 <?php $__env->startSection('title'); ?>
-Gana dinero desde Casa
+Gana dinero desde Casa -SEGURIDAD
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
 <div class="col-md-12 page-body">
 	<div class="row">
 		<div class="sub-title">
-			<h2>Acerca de mi</h2>
+			<h2>Me alegra qu sigas y estes en esta parte :)</h2>
 			<a href="contact.html"><i class="icon-envelope"></i></a>
 		</div>
 		<div class="col-md-12 content-page">
 			<div class="col-md-12 blog-post">
 				<div class="post-title margin-bottom-30">
-					<h1>Hola, Soy <span class="main-color">JORGE MUÑOZ</span></h1>
-
-					<ul class="knowledge">
+					<center><h1>Factores de <span class="main-color">SEGURIDAD.</span></h1></center>
+					<!-- <ul class="knowledge">
 						<li class="bg-color-1">Diseñador web</li>
 						<li class="bg-color-4">Desarrollador web</li>
 						<li class="bg-color-6">Persona de libre dedicación</li>
 						<li class="bg-color-5">Emprendedor</li>
-					</ul>
-				</div>
-				<p>Voy a contarles un pequeño fragmento sobre mí, estoy en el desarrollo y aplicativos web desde el 2012, durante este tiempo he aprendido muchas y con el paso de tiempo he logrado observar que todo no es el diseño y creación de aplicativos, hoy día en la actualidad todo se mueve por el <b><a href="http://www.mundovirtual.biz/como-ganar-dinero-en-internet-27-formas/" data-toggle="tooltip" data-placement="top" title="Si el internet!!">Internet</a></b>.<br><br>
-					Quiero enseñarles este video que hice para compartirles. 
-				</p>
+					</ul> -->
+				</div>	
 				<!-- Video Start -->
-				<div class="video-box margin-top-40 margin-bottom-80">
+				<div class="video-box margin-top-30 margin-bottom-80">
 					<div class="video-tutorial">
 						<a class="video-popup" href="https://www.youtube.com/watch?v=O2Bsw3lrhvs" title="Reprodúceme">
 							<img src="images/televisor.png" alt="">
@@ -34,11 +30,25 @@ Gana dinero desde Casa
 					
 				</div>
 				<!-- Video End -->
-				<br>
+				<br>			
+				<p>
+					<center><h1>Enlaces mencionados en el<span class="main-color"> VIDEO.</span></h1></center>					
+
+					<center><a href="http://www.rues.org.co/RUES_Web/consultas/DetalleRM?codigo_camara=11&matricula=0000256684">1. Enlace de la Cámara de Comercio.</a></center><br>
+					<center><a href="https://www.facebook.com/groups/clickeame/">2.Grupo oficial de Facebook de la empresa</a></center><br>
+					<center><a href="#">3. Numero de servico al cliente. Solo WhatsApp : +57 301-707-5124​⁠​</a></center><br>
+					<center><a href="https://www.facebook.com/YosoynetworkedH/videos/1256325697748286/">4. Participación del señor Gerson Fuentes en presentación en directo</a></center><br>
+					<center><a href="https://i.imgur.com/sIYx4UK.png">5. Documentos expedidos por la superintendencia de sociedades:
+					</a></center><br>
+					<center><a href="https://youtu.be/6IegpgFWBAw">6. Video recomendado de Youtube:
+					</a></center><br>
+				</p>				
+				<br><br><br>
+				
 				<center>
-					<a href="<?php echo e(URL::route('Camino')); ?>">
+					<a href="<?php echo e(URL::route('Seguridad')); ?>">
 						<button class="btn btn-success" type="button">						
-							>> PRIMER PASO (EL CAMINO)							
+							>> TERCER PASO (HERRAMIENTAS)							
 						</button>
 					</a>
 				</center>

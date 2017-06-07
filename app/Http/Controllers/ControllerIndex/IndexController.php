@@ -57,17 +57,18 @@ class IndexController extends Controller{
 	}
 
 	public function Principal(){
-		// $Publicaciones=Publicacion::where('Estado_Publicacion','Activo')		
-		// ->get();		
-
-		dd('epa');	
-
-
-		// return view('Index.Principal')->with('Publicaciones',$Publicaciones);
 		return view('Index.Principal');
 
 	}
 	
+	public function Camino(){
+		return view('Index.Camino');
+
+	}
+	public function Seguridad(){
+		return view('Index.Seguridad');
+
+	}
 
 
 

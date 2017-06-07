@@ -48,18 +48,28 @@ use Carbon\Carbon;
 									$vista = Route::currentRouteName();
 									$current = array
 									(
-										'Principal' => ''
+										'Principal' => '',
+										'Camino' => '',
+										'Seguridad' => ''
 										);
 									if ($vista == '' || $vista == 'Principal'){
 										$current['Principal'] = 'active';
-									}								
+									}else if ($vista == '' || $vista == 'Camino'){
+										$current['Camino'] = 'active';					
+									}else if ($vista == '' || $vista == 'Seguridad'){
+										$current['Seguridad'] = 'active';					
+									}			
 									?>
-									
+
 									<li class="{{$current['Principal']}}">
 										<a href="{{URL::route('Principal')}}">Introducción</a>
 									</li>
-									<li><a href="about.html">Camino</a></li>
-									<li><a href="work.html">Seguridad</a></li>
+									<li class="{{$current['Camino']}}">
+										<a href="{{URL::route('Camino')}}">Camino</a>
+									</li>
+									<li class="{{$current['Seguridad']}}">
+										<a href="{{URL::route('Seguridad')}}">Seguridad</a>
+									</li>
 									<li><a href="contact.html">Herramientas</a></li>
 								</ul>
 							</div>
@@ -85,12 +95,16 @@ use Carbon\Carbon;
 
 							<ul class="menu-link">
 
-								
+
 								<li class="{{$current['Principal']}}">
 									<a href="{{URL::route('Principal')}}">Introducción</a>
 								</li>
-								<li><a href="about.html">Camino</a></li>
-								<li><a href="work.html">Seguridad</a></li>
+								<li class="{{$current['Camino']}}">
+									<a href="{{URL::route('Camino')}}">Camino</a>
+								</li>
+								<li class="{{$current['Seguridad']}}">
+									<a href="{{URL::route('Seguridad')}}">Seguridad</a>
+								</li>
 								<li><a href="contact.html">Herramientas</a></li>
 							</ul>
 							<p>© Copyright 2017 Villejo. Todos los derechos Reservados</p>

@@ -36,7 +36,14 @@ Gana dinero desde Casa
 				</div>
 				<!-- Video End -->
 				<br>
-				<center><button class="btn btn-success"> >> SIGUIENTE PASO</button></center>				<br><br><br>
+				<center>
+					<a href="{{URL::route('Camino')}}">
+						<button class="btn btn-success" type="button">						
+							>> PRIMER PASO (EL CAMINO)							
+						</button>
+					</a>
+				</center>
+				<br><br><br>
 
 
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display:inline-block;text-align:center;justify-content: center;aling-items: center">

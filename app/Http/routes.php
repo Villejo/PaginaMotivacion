@@ -20,7 +20,8 @@ Route::any('/', array('as'=>'Index','uses'=>'ControllerIndex\IndexController@Ind
 
 Route::any('Principal', array('as'=>'Principal','uses'=>'ControllerIndex\IndexController@Index'));
 
-
+Route::any('Camino', array('as'=>'Camino','uses'=>'ControllerIndex\IndexController@Camino'));
+Route::any('Seguridad', array('as'=>'Seguridad','uses'=>'ControllerIndex\IndexController@Seguridad'));
 
 
 
