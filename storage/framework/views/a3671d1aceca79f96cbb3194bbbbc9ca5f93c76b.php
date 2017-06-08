@@ -1,8 +1,7 @@
-@extends('layouts.master')
-@section('title')
+<?php $__env->startSection('title'); ?>
 Gana dinero desde Casa -SEGURIDAD
-@stop
-@section('content')
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
 <div class="row">
 	<div class="sub-title">
 		<h2>Me alegra que sigas y estés en esta parte :)</h2>
@@ -45,7 +44,7 @@ Gana dinero desde Casa -SEGURIDAD
 				<br><br><br>
 				
 				<center>
-					<a href="{{URL::route('Herramientas')}}">
+					<a href="<?php echo e(URL::route('Herramientas')); ?>">
 						<button class="btn btn-success" type="button">						
 							>> TERCER PASO (HERRAMIENTAS)							
 						</button>
@@ -93,4 +92,5 @@ Gana dinero desde Casa -SEGURIDAD
 
 
 
-	@stop
+	<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

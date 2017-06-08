@@ -10,17 +10,13 @@ use Carbon\Carbon;
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
 	<!-- SEO -->
 	<meta name="description" content="150 words">
 	<meta name="author" content="uipasta">
 	<meta name="url" content="http://www.yourdomainname.com">
 	<meta name="copyright" content="company name">
 	<meta name="robots" content="index,follow">
-
-
 	<title><?php echo $__env->yieldContent('title'); ?></title>
-
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="Estilos/images/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="Estilos/images/favicon/apple-touch-icon.png">  
@@ -63,7 +59,6 @@ use Carbon\Carbon;
 										$current['Herramientas'] = 'active';					
 									}			
 									?>
-
 									<li class="<?php echo e($current['Principal']); ?>">
 										<a href="<?php echo e(URL::route('Principal')); ?>">Introducción</a>
 									</li>
@@ -82,13 +77,15 @@ use Carbon\Carbon;
 						<div class="my-detail">
 							<div class="white-spacing">
 								<h1>Jorge Muñoz</h1>
-								<span>Emprendedor</span>
+								<span>Emprendedor</span><br>
+								<img src="images/whatsapp.png" width="30" height="30">
+								<span>301-225-1727</span>
 							</div> 
 							<ul class="social-icon">
-								<li><a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="#" target="_blank" class="github"><i class="fa fa-github"></i></a></li>
+								<li><a href="https://www.facebook.com/Jorgeleoanardo18" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://twitter.com/smallvillejo" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
+								<!-- <li><a href="#" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" target="_blank" class="github"><i class="fa fa-github"></i></a></li> -->
 							</ul>
 						</div>
 					</div>

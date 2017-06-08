@@ -20,8 +20,8 @@ Gana dinero desde Casa -HERRAMIENTAS
 					</ul> -->
 				</div>					
 				<br>			
-				<p>
-					Te felicito por llegar a la parte final de este Mini Curso. Ahora tú también puedes ganar dinero desde casa.
+				<p align="justify">
+					Te felicito por llegar a la parte final. Ahora tú también puedes ganar dinero desde casa.
 
 					Contáctame y dime "hola Jorge quiero que me entregues mi Oficina Virtual, Las Herramientas y que me ingreses en el Grupo de WhatsApp para desarrollar este negocio en compañía de todos ustedes".
 					<br>
@@ -38,8 +38,12 @@ Gana dinero desde Casa -HERRAMIENTAS
 				<!-- Video End -->
 				<center><h1><span class="main-color">CONTACTO</span></h1></center>
 				<center>
-					<i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i> 301-225-1727<br>
-					<i class="fa fa-envelope fa-2x" aria-hidden="true"></i> Jorge_9128@hotmail.com
+					<img src="images/whatsapp.png" width="30" height="30">
+					<span>301-225-1727</span><br>
+					<img src="images/email.png" width="30" height="30">
+					<span>Jorge_9128@hotmail.com</span>
+					
+					
 				</center>
 				<br><br><br>
 
