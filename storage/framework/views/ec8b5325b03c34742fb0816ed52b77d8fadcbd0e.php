@@ -1,8 +1,7 @@
-@extends('layouts.master')
-@section('title')
+<?php $__env->startSection('title'); ?>
 Gana dinero desde Casa -HERRAMIENTAS
-@stop
-@section('content')
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
 
 <div class="row">
 	<div class="sub-title">
@@ -21,7 +20,7 @@ Gana dinero desde Casa -HERRAMIENTAS
 					</ul> -->
 				</div>					
 				<br>			
-				<p align="justify">
+				<p>
 					Te felicito por llegar a la parte final de este Mini Curso. Ahora tú también puedes ganar dinero desde casa.
 
 					Contáctame y dime "hola Jorge quiero que me entregues mi Oficina Virtual, Las Herramientas y que me ingreses en el Grupo de WhatsApp para desarrollar este negocio en compañía de todos ustedes".
@@ -84,4 +83,5 @@ Gana dinero desde Casa -HERRAMIENTAS
 
 
 
-	@stop
+	<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

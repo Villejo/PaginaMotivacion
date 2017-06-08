@@ -1,8 +1,7 @@
-@extends('layouts.master')
-@section('title')
+<?php $__env->startSection('title'); ?>
 Gana dinero desde Casa
-@stop
-@section('content')
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
 
 	<div class="row">
 		<div class="sub-title">
@@ -37,7 +36,7 @@ Gana dinero desde Casa
 				<!-- Video End -->
 				<br>
 				<center>
-					<a href="{{URL::route('Camino')}}">
+					<a href="<?php echo e(URL::route('Camino')); ?>">
 						<button class="btn btn-success" type="button">						
 							>> PRIMER PASO (EL CAMINO)							
 						</button>
@@ -85,4 +84,5 @@ Gana dinero desde Casa
 
 
 
-@stop
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

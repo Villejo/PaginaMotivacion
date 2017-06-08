@@ -26,12 +26,12 @@ Gana dinero desde Casa -SEGURIDAD
 							<img src="images/televisor.png" alt="">
 						</a>                           
 					</div>
-					<p>Tomate tu tiempo y mira este increíble video.</p>
+					<p align="justify">Tomate tu tiempo y mira este increíble video.</p>
 					
 				</div>
 				<!-- Video End -->
 				<br>			
-				<p>
+				<p align="justify">
 					<center><h1>Enlaces mencionados en el<span class="main-color"> VIDEO.</span></h1></center>					
 
 					<center><a href="http://www.rues.org.co/RUES_Web/consultas/DetalleRM?codigo_camara=11&matricula=0000256684">1. Enlace de la Cámara de Comercio.</a></center><br>

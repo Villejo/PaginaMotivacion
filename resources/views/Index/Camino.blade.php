@@ -19,28 +19,29 @@ Gana dinero desde Casa -CAMINO
 						<li class="bg-color-5">Emprendedor</li>
 					</ul> -->
 				</div>				
-				<p>
+				<p align="justify">
 					No debes preocuparte por vender productos o con cumplir con un volumen de ventas mensuales. En esta empresa solo te piden trabajar 5 minutos en el dia para garantizar tu permanencia.
 					Puedes desarrollar este negocio desde tu celular o PC.
 					Comparte la oportunidad y recibe increibles ganacias.
 					Puedes hacerlo de forma gratuita. 
 				</p>
-				<div class="col-md-12 blog-post">
-					<div class="post-image">
-						<img src="images/FreseMotiva.jpg" alt="">
-					</div>					
-				</div>
-				<br><br><br>
+				<!-- <div class="col-md-12 blog-post"> -->
+				<div class="post-image">
+					<img src="images/FreseMotiva.jpg" alt="">					
+				</div>					
+				<!-- </div> -->
+				
 
 
 				<!-- Video Start -->
 				<div class="video-box margin-top-200 margin-bottom-80">
 					<div class="video-tutorial">
+
 						<a class="video-popup" href="https://www.youtube.com/watch?v=O2Bsw3lrhvs" title="Reprodúceme">
 							<img src="images/televisor.png" alt="">
 						</a>                           
 					</div>
-					<p>Tomate tu tiempo y mira este increíble video.</p>
+					<p align="justify">Tomate tu tiempo y mira este increíble video.</p>
 					
 				</div>
 				<!-- Video End -->

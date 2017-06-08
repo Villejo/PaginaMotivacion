@@ -1,46 +1,56 @@
-@extends('layouts.master')
-@section('title')
-Gana dinero desde Casa -HERRAMIENTAS
-@stop
-@section('content')
-
+<?php $__env->startSection('title'); ?>
+Gana dinero desde Casa -CAMINO
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
 <div class="row">
 	<div class="sub-title">
-		<h2>Me alegra que estés aquí, ahora tú podrás también ganar dinero desde casa:)</h2>
+		<h2>Me alegra que estés en esta parte :)</h2>
 		<a href="contact.html"><i class="icon-envelope"></i></a>
 	</div>
 	<div class="col-md-12 content-page">
 		<div class="col-md-12 blog-post">
 			<div class="post-title margin-bottom-30">
-				<center><h1>Estas son las Herramientas que te  <span class="main-color">ENTREGO</span></h1></center>
+				<h1>Conoce el <span class="main-color">CAMINO</span></h1>
 					<!-- <ul class="knowledge">
 						<li class="bg-color-1">Diseñador web</li>
 						<li class="bg-color-4">Desarrollador web</li>
 						<li class="bg-color-6">Persona de libre dedicación</li>
 						<li class="bg-color-5">Emprendedor</li>
 					</ul> -->
-				</div>					
-				<br>			
+				</div>				
 				<p align="justify">
-					Te felicito por llegar a la parte final de este Mini Curso. Ahora tú también puedes ganar dinero desde casa.
+					No debes preocuparte por vender productos o con cumplir con un volumen de ventas mensuales. En esta empresa solo te piden trabajar 5 minutos en el dia para garantizar tu permanencia.
+					Puedes desarrollar este negocio desde tu celular o PC.
+					Comparte la oportunidad y recibe increibles ganacias.
+					Puedes hacerlo de forma gratuita. 
+				</p>
+				<!-- <div class="col-md-12 blog-post"> -->
+				<div class="post-image">
+					<img src="images/FreseMotiva.jpg" alt="">					
+				</div>					
+				<!-- </div> -->
+				
 
-					Contáctame y dime "hola Jorge quiero que me entregues mi Oficina Virtual, Las Herramientas y que me ingreses en el Grupo de WhatsApp para desarrollar este negocio en compañía de todos ustedes".
-					<br>
-				</p>				
-				<br><br><br>
+
 				<!-- Video Start -->
-				<div class="video-box margin-top-30 margin-bottom-80">
+				<div class="video-box margin-top-200 margin-bottom-80">
 					<div class="video-tutorial">
+
 						<a class="video-popup" href="https://www.youtube.com/watch?v=O2Bsw3lrhvs" title="Reprodúceme">
 							<img src="images/televisor.png" alt="">
 						</a>                           
-					</div>					
+					</div>
+					<p align="justify">Tomate tu tiempo y mira este increíble video.</p>
+					
 				</div>
 				<!-- Video End -->
-				<center><h1><span class="main-color">CONTACTO</span></h1></center>
+				<br>
 				<center>
-					<i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i> 301-225-1727<br>
-					<i class="fa fa-envelope fa-2x" aria-hidden="true"></i> Jorge_9128@hotmail.com
+					<a href="<?php echo e(URL::route('Seguridad')); ?>">
+						<button class="btn btn-success" type="button">						
+							>> SEGUNDO PASO (SEGURIDAD)						
+						</button>
+					</a>
 				</center>
 				<br><br><br>
 
@@ -50,7 +60,7 @@ Gana dinero desde Casa -HERRAMIENTAS
 						<!-- <div class="panel-heading"></div> -->
 						<div class="panel-body">
 							<div class="row">
-								<div class="fb-comments" data-href="http://temotivo.teloprogramo.net/Herramientas" data-numposts="10"></div>
+								<div class="fb-comments" data-href="http://temotivo.teloprogramo.net/Camino" data-numposts="10"></div>
 							</div>					
 						</div>
 					</div>
@@ -58,10 +68,6 @@ Gana dinero desde Casa -HERRAMIENTAS
 			</div>
 		</div>
 	</div>
-
-
-
-
 
 
 
@@ -84,4 +90,5 @@ Gana dinero desde Casa -HERRAMIENTAS
 
 
 
-	@stop
+	<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

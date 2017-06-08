@@ -19,7 +19,7 @@ use Carbon\Carbon;
 	<meta name="robots" content="index,follow">
 
 
-	<title>@yield('title')</title>
+	<title><?php echo $__env->yieldContent('title'); ?></title>
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="Estilos/images/favicon/favicon.ico">
@@ -28,7 +28,7 @@ use Carbon\Carbon;
 	<link rel="stylesheet" type="text/css" href="Estilos/css/style.css">  
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
 	<script src="jquery/jquery-3.1.0.min.js"></script>	
-	<input type="hidden" name="_token" id="_token"  value="{{ csrf_token() }}">
+	<input type="hidden" name="_token" id="_token"  value="<?php echo e(csrf_token()); ?>">
 </head>
 <body>
 	<div class="preloader">
@@ -64,17 +64,17 @@ use Carbon\Carbon;
 									}			
 									?>
 
-									<li class="{{$current['Principal']}}">
-										<a href="{{URL::route('Principal')}}">Introducción</a>
+									<li class="<?php echo e($current['Principal']); ?>">
+										<a href="<?php echo e(URL::route('Principal')); ?>">Introducción</a>
 									</li>
-									<li class="{{$current['Camino']}}">
-										<a href="{{URL::route('Camino')}}">Camino</a>
+									<li class="<?php echo e($current['Camino']); ?>">
+										<a href="<?php echo e(URL::route('Camino')); ?>">Camino</a>
 									</li>
-									<li class="{{$current['Seguridad']}}">
-										<a href="{{URL::route('Seguridad')}}">Seguridad</a>
+									<li class="<?php echo e($current['Seguridad']); ?>">
+										<a href="<?php echo e(URL::route('Seguridad')); ?>">Seguridad</a>
 									</li>
-									<li class="{{$current['Herramientas']}}">
-										<a href="{{URL::route('Herramientas')}}">Herramientas</a>
+									<li class="<?php echo e($current['Herramientas']); ?>">
+										<a href="<?php echo e(URL::route('Herramientas')); ?>">Herramientas</a>
 									</li>
 								</ul>
 							</div>
@@ -95,7 +95,7 @@ use Carbon\Carbon;
 				</div>
 				<div class="col-md-9">
 					<div class="col-md-12 page-body">
-						@yield('content')
+						<?php echo $__env->yieldContent('content'); ?>
 						<div class="pull-right">
 							<h4>Total Visitas: <font size ="5", color ="#1abc9c"><label id="ID_contador_Visitas"></label></font> </h4>
 						</div>
@@ -107,17 +107,17 @@ use Carbon\Carbon;
 							<ul class="menu-link">
 
 
-								<li class="{{$current['Principal']}}">
-									<a href="{{URL::route('Principal')}}">Introducción</a>
+								<li class="<?php echo e($current['Principal']); ?>">
+									<a href="<?php echo e(URL::route('Principal')); ?>">Introducción</a>
 								</li>
-								<li class="{{$current['Camino']}}">
-									<a href="{{URL::route('Camino')}}">Camino</a>
+								<li class="<?php echo e($current['Camino']); ?>">
+									<a href="<?php echo e(URL::route('Camino')); ?>">Camino</a>
 								</li>
-								<li class="{{$current['Seguridad']}}">
-									<a href="{{URL::route('Seguridad')}}">Seguridad</a>
+								<li class="<?php echo e($current['Seguridad']); ?>">
+									<a href="<?php echo e(URL::route('Seguridad')); ?>">Seguridad</a>
 								</li>
-								<li class="{{$current['Herramientas']}}">
-									<a href="{{URL::route('Herramientas')}}">Herramientas</a>
+								<li class="<?php echo e($current['Herramientas']); ?>">
+									<a href="<?php echo e(URL::route('Herramientas')); ?>">Herramientas</a>
 								</li>
 							</ul>
 							<p>© Copyright 2017 Villejo. Todos los derechos Reservados</p>
@@ -141,7 +141,7 @@ use Carbon\Carbon;
 		function ContadorVisitas(){			
 			$.ajax({
 				type:'get',			
-				url:'{{ url('ContadorVisitas')}}',
+				url:'<?php echo e(url('ContadorVisitas')); ?>',
 				success: function(data){ 
 					$('#ID_contador_Visitas').text(data.TotalVisitas);
 					
