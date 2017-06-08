@@ -37,11 +37,11 @@ Gana dinero desde Casa -CAMINO
 				<div class="video-box margin-top-200 margin-bottom-80">
 					<div class="video-tutorial">
 
-						<a class="video-popup" href="https://www.youtube.com/watch?v=O2Bsw3lrhvs" title="Reprodúceme">
+						<a class="video-popup" href="https://www.youtube.com/watch?v=I9zZw590fnk" title="Reprodúceme">
 							<img src="images/televisor.png" alt="">
 						</a>                           
 					</div>
-					<p align="justify">Tomate tu tiempo y mira este increíble video.</p>
+					<p align="justify">Tomate tu tiempo y mira este video.</p>
 					
 				</div>
 				<!-- Video End -->
@@ -61,7 +61,7 @@ Gana dinero desde Casa -CAMINO
 						<!-- <div class="panel-heading"></div> -->
 						<div class="panel-body">
 							<div class="row">
-								<div class="fb-comments" data-href="http://temotivo.teloprogramo.net/Camino" data-numposts="10"></div>
+								<div class="fb-comments" data-href="http://motivacion.teloprogramo.net/Camino" data-numposts="10"></div>
 							</div>					
 						</div>
 					</div>

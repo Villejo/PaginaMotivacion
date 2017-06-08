@@ -31,7 +31,7 @@ Gana dinero desde Casa -HERRAMIENTAS
 				<!-- Video Start -->
 				<div class="video-box margin-top-30 margin-bottom-80">
 					<div class="video-tutorial">
-						<a class="video-popup" href="https://www.youtube.com/watch?v=O2Bsw3lrhvs" title="Reprodúceme">
+						<a class="video-popup" href="https://www.youtube.com/watch?v=Am9tn7vRM_w" title="Reprodúceme">
 							<img src="images/televisor.png" alt="">
 						</a>                           
 					</div>					
@@ -54,7 +54,7 @@ Gana dinero desde Casa -HERRAMIENTAS
 						<!-- <div class="panel-heading"></div> -->
 						<div class="panel-body">
 							<div class="row">
-								<div class="fb-comments" data-href="http://temotivo.teloprogramo.net/Herramientas" data-numposts="10"></div>
+								<div class="fb-comments" data-href="http://motivacion.teloprogramo.net/Herramientas" data-numposts="10"></div>
 							</div>					
 						</div>
 					</div>

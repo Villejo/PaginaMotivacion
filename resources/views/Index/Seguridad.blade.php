@@ -59,7 +59,7 @@ Gana dinero desde Casa -SEGURIDAD
 						<!-- <div class="panel-heading"></div> -->
 						<div class="panel-body">
 							<div class="row">
-								<div class="fb-comments" data-href="http://temotivo.teloprogramo.net/Seguridad" data-numposts="10"></div>
+								<div class="fb-comments" data-href="http://motivacion.teloprogramo.net/Seguridad" data-numposts="10"></div>
 							</div>					
 						</div>
 					</div>

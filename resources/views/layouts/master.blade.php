@@ -10,12 +10,19 @@ use Carbon\Carbon;
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<!-- SEO -->
-	<meta name="description" content="150 words">
-	<meta name="author" content="uipasta">
-	<meta name="url" content="http://www.yourdomainname.com">
+	<!-- SEO -->	
+	<meta name="author" content="Jorge Munoz C">
+	<meta name="url" content="http://motivacion.teloprogramo.net">
 	<meta name="copyright" content="company name">
 	<meta name="robots" content="index,follow">
+	<meta name="description" content="Te invito a trabajar en esta gran Empresa" />	
+	<meta property="og:url" content="http://motivacion.teloprogramo.net" />
+	<meta property="og:title" content="Solo tu puedes comenzar a ganar dinero desde casa">
+	<meta property="og:site_name" content="Solo tu puedes comenzar a ganar dinero desde casa">
+	<!--   <meta property="og:image" content="http://ganadinero.teloprogramo.net/images/Clickeame/LogoSocial.png"> -->
+	<meta property="og:image" content="http://motivacion.teloprogramo.net/images/ganadinero.jpg">
+	<meta property="og:image:width" content="640">
+	<meta property="og:image:height" content="300">
 	<title>@yield('title')</title>
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="Estilos/images/favicon/favicon.ico">

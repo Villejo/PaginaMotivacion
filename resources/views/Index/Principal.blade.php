@@ -51,7 +51,7 @@ Gana dinero desde Casa
 						<!-- <div class="panel-heading"></div> -->
 						<div class="panel-body">
 							<div class="row">
-								<div class="fb-comments" data-href="http://temotivo.teloprogramo.net/Principal" data-numposts="10"></div>
+								<div class="fb-comments" data-href="http://motivacion.teloprogramo.net/Principal" data-numposts="10"></div>
 							</div>					
 						</div>
 					</div>
