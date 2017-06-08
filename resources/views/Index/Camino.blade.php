@@ -3,16 +3,15 @@
 Gana dinero desde Casa -CAMINO
 @stop
 @section('content')
-<div class="col-md-12 page-body">
-	<div class="row">
-		<div class="sub-title">
-			<h2>Me alegra que estes en esta parte :)</h2>
-			<a href="contact.html"><i class="icon-envelope"></i></a>
-		</div>
-		<div class="col-md-12 content-page">
-			<div class="col-md-12 blog-post">
-				<div class="post-title margin-bottom-30">
-					<h1>Conoce el <span class="main-color">CAMINO</span></h1>
+<div class="row">
+	<div class="sub-title">
+		<h2>Me alegra que estés en esta parte :)</h2>
+		<a href="contact.html"><i class="icon-envelope"></i></a>
+	</div>
+	<div class="col-md-12 content-page">
+		<div class="col-md-12 blog-post">
+			<div class="post-title margin-bottom-30">
+				<h1>Conoce el <span class="main-color">CAMINO</span></h1>
 					<!-- <ul class="knowledge">
 						<li class="bg-color-1">Diseñador web</li>
 						<li class="bg-color-4">Desarrollador web</li>
@@ -49,7 +48,7 @@ Gana dinero desde Casa -CAMINO
 				<center>
 					<a href="{{URL::route('Seguridad')}}">
 						<button class="btn btn-success" type="button">						
-						>> SEGUNDO PASO (SEGURIDAD)						
+							>> SEGUNDO PASO (SEGURIDAD)						
 						</button>
 					</a>
 				</center>
@@ -61,7 +60,7 @@ Gana dinero desde Casa -CAMINO
 						<!-- <div class="panel-heading"></div> -->
 						<div class="panel-body">
 							<div class="row">
-								<div class="fb-comments" data-href="http://comentario1.net/" data-numposts="10"></div>
+								<div class="fb-comments" data-href="http://temotivo.teloprogramo.net/Camino" data-numposts="10"></div>
 							</div>					
 						</div>
 					</div>
@@ -69,7 +68,6 @@ Gana dinero desde Casa -CAMINO
 			</div>
 		</div>
 	</div>
-</div>
 
 
 
@@ -81,18 +79,15 @@ Gana dinero desde Casa -CAMINO
 
 
 
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.9";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
 
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-	var js, fjs = d.getElementsByTagName(s)[0];
-	if (d.getElementById(id)) return;
-	js = d.createElement(s); js.id = id;
-	js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.9";
-	fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-@stop
+	@stop

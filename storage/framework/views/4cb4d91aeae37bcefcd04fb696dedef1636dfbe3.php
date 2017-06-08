@@ -50,7 +50,8 @@ use Carbon\Carbon;
 									(
 										'Principal' => '',
 										'Camino' => '',
-										'Seguridad' => ''
+										'Seguridad' => '',
+										'Herramientas' => ''
 										);
 									if ($vista == '' || $vista == 'Principal'){
 										$current['Principal'] = 'active';
@@ -58,6 +59,8 @@ use Carbon\Carbon;
 										$current['Camino'] = 'active';					
 									}else if ($vista == '' || $vista == 'Seguridad'){
 										$current['Seguridad'] = 'active';					
+									}else if ($vista == '' || $vista == 'Herramientas'){
+										$current['Herramientas'] = 'active';					
 									}			
 									?>
 
@@ -70,7 +73,9 @@ use Carbon\Carbon;
 									<li class="<?php echo e($current['Seguridad']); ?>">
 										<a href="<?php echo e(URL::route('Seguridad')); ?>">Seguridad</a>
 									</li>
-									<li><a href="contact.html">Herramientas</a></li>
+									<li class="<?php echo e($current['Herramientas']); ?>">
+										<a href="<?php echo e(URL::route('Herramientas')); ?>">Herramientas</a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -89,7 +94,13 @@ use Carbon\Carbon;
 					</div>
 				</div>
 				<div class="col-md-9">
-					<?php echo $__env->yieldContent('content'); ?>
+					<div class="col-md-12 page-body">
+						<?php echo $__env->yieldContent('content'); ?>
+						<div class="pull-right">
+							<h4>Total Visitas: <font size ="5", color ="#1abc9c"><label id="ID_contador_Visitas"></label></font> </h4>
+						</div>
+					</div>
+
 					<div class="col-md-12 page-body margin-top-50 footer">
 						<footer>
 
@@ -105,7 +116,9 @@ use Carbon\Carbon;
 								<li class="<?php echo e($current['Seguridad']); ?>">
 									<a href="<?php echo e(URL::route('Seguridad')); ?>">Seguridad</a>
 								</li>
-								<li><a href="contact.html">Herramientas</a></li>
+								<li class="<?php echo e($current['Herramientas']); ?>">
+									<a href="<?php echo e(URL::route('Herramientas')); ?>">Herramientas</a>
+								</li>
 							</ul>
 							<p>© Copyright 2017 Villejo. Todos los derechos Reservados</p>
 							<div class="uipasta-credit">Diseñado por <a href="https://www.facebook.com/Jorgeleoanardo18" target="_blank">@Villejo</a></div>
@@ -121,7 +134,22 @@ use Carbon\Carbon;
 
 
 
+	<script type="text/javascript">
+		ContadorVisitas();
 
+
+		function ContadorVisitas(){			
+			$.ajax({
+				type:'get',			
+				url:'<?php echo e(url('ContadorVisitas')); ?>',
+				success: function(data){ 
+					$('#ID_contador_Visitas').text(data.TotalVisitas);
+					
+					// $('#id_grafica').empty().html(data);	
+				}         
+			});
+		}
+	</script>
 
 
 

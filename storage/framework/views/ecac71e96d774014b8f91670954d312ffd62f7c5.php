@@ -2,7 +2,7 @@
 Gana dinero desde Casa
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
-<div class="col-md-12 page-body">
+
 	<div class="row">
 		<div class="sub-title">
 			<h2>Acerca de mi</h2>
@@ -50,7 +50,7 @@ Gana dinero desde Casa
 						<!-- <div class="panel-heading"></div> -->
 						<div class="panel-body">
 							<div class="row">
-								<div class="fb-comments" data-href="http://comentario1.net/" data-numposts="10"></div>
+								<div class="fb-comments" data-href="http://temotivo.teloprogramo.net/Principal" data-numposts="10"></div>
 							</div>					
 						</div>
 					</div>
@@ -58,7 +58,7 @@ Gana dinero desde Casa
 			</div>
 		</div>
 	</div>
-</div>
+
 
 
 

@@ -22,6 +22,9 @@ Route::any('Principal', array('as'=>'Principal','uses'=>'ControllerIndex\IndexCo
 
 Route::any('Camino', array('as'=>'Camino','uses'=>'ControllerIndex\IndexController@Camino'));
 Route::any('Seguridad', array('as'=>'Seguridad','uses'=>'ControllerIndex\IndexController@Seguridad'));
+Route::any('Herramientas', array('as'=>'Herramientas','uses'=>'ControllerIndex\IndexController@Herramientas'));
+
+Route::any('ContadorVisitas', array('as'=>'ContadorVisitas','uses'=>'ControllerIndex\IndexController@ContadorVisitas'));
 
 
 

@@ -8,6 +8,7 @@ use WebMotivacion\Models\Usuarios\Usuario;
 use WebMotivacion\Models\Publicaciones\Publicacion;
 use WebMotivacion\Models\Publicaciones\Like;
 use WebMotivacion\Models\Publicaciones\Comentario;
+use WebMotivacion\Models\Index\Visitas_M;
 use Illuminate\Support\Facades\Input;
 use Response;
 use Illuminate\Support\Facades\Validator;
@@ -70,7 +71,46 @@ class IndexController extends Controller{
 
 	}
 
+	public function Herramientas(){
+		return view('Index.Herramientas');
 
+	}
+
+	public function ContadorVisitas(){
+
+		$IP = request()->ip();		
+		if($IP=="::1"){
+			$LocalIP = getHostByName(getHostName());
+		}else{
+			$LocalIP=$IP;
+		}
+
+		$Fecha_Actual=Carbon::today()->toDateString();
+
+
+		$Visitas=Visitas_M::Where('Ip_Visita',$LocalIP)
+		->Where('fecha_visita',$Fecha_Actual)
+		->count();
+
+		$TotalVisitas=Visitas_M::count();	
+
+		if($Visitas==0){
+			$Datos = array(
+				'Ip_Visita'       		=> $LocalIP,
+				'fecha_visita'        	=> $Fecha_Actual				     
+				);
+
+			$check = DB::table('visitas')->insert($Datos);	
+
+			$TotalVisitas=Visitas_M::count();	
+
+			return Response::json(['TotalVisitas'=>$TotalVisitas]);
+			
+		}else{
+			return Response::json(['TotalVisitas'=>$TotalVisitas]);
+			
+		}
+	}
 
 
 
