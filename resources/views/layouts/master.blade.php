@@ -11,16 +11,21 @@ use Carbon\Carbon;
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- SEO -->	
-	<meta name="author" content="Jorge Munoz C">
-	<meta name="url" content="http://motivacion.teloprogramo.net">
+	<meta name="author" content="Jorge Munoz C">	
+	<meta name="url" content="http://motivacion.teloprogramo.net/Principal">
 	<meta name="copyright" content="company name">
-	<meta name="robots" content="index,follow">
-	<meta name="description" content="Te invito a trabajar en esta gran Empresa" />	
-	<meta property="og:url" content="http://motivacion.teloprogramo.net" />
-	<meta property="og:title" content="Solo tu puedes comenzar a ganar dinero desde casa">
-	<meta property="og:site_name" content="Solo tu puedes comenzar a ganar dinero desde casa">
+	<meta name="robots" content="index,follow">	
+	<meta property="fb:app_id" content="1233681736730792"/>
+	<meta name="description" content="Te invito a trabajar en esta gran Empresa, No debes preocuparte por vender productos o con cumplir con un volumen de ventas mensuales. En esta empresa solo te piden trabajar 5 minutos en el dia para garantizar tu permanencia.
+	Puedes desarrollar este negocio desde tu celular o PC y	Puedes hacerlo de forma gratuita."/>	
+	<meta property="og:description" 
+	content="Te invito a trabajar en esta gran Empresa, No debes preocuparte por vender productos o con cumplir con un volumen de ventas mensuales. En esta empresa solo te piden trabajar 5 minutos en el dia para garantizar tu permanencia.
+	Puedes desarrollar este negocio desde tu celular o PC y	Puedes hacerlo de forma gratuita." />
+	<meta property="og:url" content="http://motivacion.teloprogramo.net/Principal" />
+	<meta property="og:title" content="Solo tu puedes comenzar a ganar dinero y desde casa">
+	<meta property="og:site_name" content="Solo tu puedes comenzar a ganar dinero y desde casa">
 	<!--   <meta property="og:image" content="http://ganadinero.teloprogramo.net/images/Clickeame/LogoSocial.png"> -->
-	<meta property="og:image" content="http://motivacion.teloprogramo.net/images/ganadinero.jpg">
+	<meta property="og:image" content="http://motivacion.teloprogramo.net/images/ganadineroe.jpg">
 	<meta property="og:image:width" content="640">
 	<meta property="og:image:height" content="300">
 	<title>@yield('title')</title>
@@ -100,6 +105,7 @@ use Carbon\Carbon;
 				<div class="col-md-9">
 					<div class="col-md-12 page-body">
 						@yield('content')
+						<div id="fb-root"></div>
 						<div class="pull-right">
 							<h4>Total Visitas: <font size ="5", color ="#1abc9c"><label id="ID_contador_Visitas"></label></font> </h4>
 						</div>
@@ -154,6 +160,14 @@ use Carbon\Carbon;
 			});
 		}
 	</script>
+
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.9";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
 
 

@@ -57,7 +57,7 @@ Gana dinero desde Casa -CAMINO
 
 
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display:inline-block;text-align:center;justify-content: center;aling-items: center">
-					<div class="panel panel-warning" style="background: #c2c3c4">
+					<div class="panel panel-warning" style="background: #f2f4f4">
 						<!-- <div class="panel-heading"></div> -->
 						<div class="panel-body">
 							<div class="row">
@@ -69,26 +69,4 @@ Gana dinero desde Casa -CAMINO
 			</div>
 		</div>
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.9";
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-
-
-
 	@stop

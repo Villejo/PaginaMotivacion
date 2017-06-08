@@ -60,7 +60,7 @@ Gana dinero desde Casa -CAMINO
 						<!-- <div class="panel-heading"></div> -->
 						<div class="panel-body">
 							<div class="row">
-								<div class="fb-comments" data-href="http://temotivo.teloprogramo.net/Camino" data-numposts="10"></div>
+								<div class="fb-comments" data-href="http://motivacion.teloprogramo.net/Camino" data-numposts="10"></div>
 							</div>					
 						</div>
 					</div>
@@ -68,27 +68,5 @@ Gana dinero desde Casa -CAMINO
 			</div>
 		</div>
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.9";
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-
-
-
 	<?php $__env->stopSection(); ?>
 <?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
